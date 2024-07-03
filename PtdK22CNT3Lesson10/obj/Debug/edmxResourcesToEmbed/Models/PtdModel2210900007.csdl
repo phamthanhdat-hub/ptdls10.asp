@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PTDK22CNT3Lesson10Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PtdAccount">
+    <Key>
+      <PropertyRef Name="PtdId" />
+    </Key>
+    <Property Name="PtdId" Type="Int32" Nullable="false" />
+    <Property Name="PtdUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PtdPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PtdFullName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PtdEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PtdPhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PtdActive" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="PTDK22CNT3Lesson10Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PtdAccount" EntityType="Self.PtdAccount" />
+  </EntityContainer>
+</Schema>
